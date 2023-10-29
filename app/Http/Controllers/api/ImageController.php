@@ -116,6 +116,7 @@ class ImageController extends Controller
                 File::delete($path);
             }
     
+            $image->info()->delete(); 
             $image->delete();
             
             return $this->response(null, 204);
