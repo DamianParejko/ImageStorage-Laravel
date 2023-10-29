@@ -13,7 +13,7 @@ class Image extends Model
 
     public function info()
     {
-        return $this->belongsTo(Info::class);
+        return $this->hasOne(Info::class);
     }
 
     public function sender()
