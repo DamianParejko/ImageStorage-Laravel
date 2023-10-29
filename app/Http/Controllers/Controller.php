@@ -22,6 +22,7 @@ class Controller extends BaseController
                 break;
             case 422:
                 $data = null;
+                break;
             default:
                 break;
         }
